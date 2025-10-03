@@ -4,7 +4,7 @@ import { Server } from "socket.io";
 
 const app = express();
 const server = http.createServer(app);
-const PORT = process.env.PORT || 3000; // Use environment port or 3000
+const PORT = process.env.PORT || 3001; // Use environment port or 3000
 
 const io = new Server(server, {
   cors: { origin: "*" }
