@@ -211,8 +211,8 @@ export default function Home() {
             ref={videoRef}
             // Add a dark skin class here if you have one installed (e.g., vjs-theme-city)
             className="video-js vjs-big-play-centered"
-            width="1280"
-            height="720"
+            width="640"
+            height="480"
           />
         </div>
       )}
