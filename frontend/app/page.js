@@ -181,7 +181,7 @@ export default function Home() {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.header}>🎥 Watch2Gether</h2>
+      <h2 style={styles.header}>🎥 Watch2Gether - Radha Cutu</h2>
 
       <div style={styles.inputGroup}>
         <label style={styles.label}>
