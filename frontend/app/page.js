@@ -3,8 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
-// You might need to import a dark Video.js skin, 
-// for example: import 'videojs-themes/dist/fantasy.css';
 
 const socket = io("https://watch2gether-9ijg.onrender.com", {
   transports: ["websocket"],
@@ -53,6 +51,7 @@ const styles = {
   videoWrapper: {
     marginTop: "20px",
     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.5)", // Subtle shadow
+    width:"100%"
   }
 };
 // -------------------------
@@ -181,7 +180,7 @@ export default function Home() {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.header}>🎥 Watch2Gether - Radha Cutu</h2>
+      <h2 style={styles.header}>Watch2Gether </h2>
 
       <div style={styles.inputGroup}>
         <label style={styles.label}>
@@ -209,10 +208,9 @@ export default function Home() {
         <div data-vjs-player style={styles.videoWrapper}>
           <video
             ref={videoRef}
-            // Add a dark skin class here if you have one installed (e.g., vjs-theme-city)
             className="video-js vjs-big-play-centered"
-            width="640"
-            height="480"
+            // width="640"
+            // height="480"
           />
         </div>
       )}
